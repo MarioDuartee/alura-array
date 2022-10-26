@@ -14,7 +14,8 @@ async function getBuscarLivrosDaAPI() {
     livros = await res.json()
     // aqui a variavel livro... recebe a função aplicarDesconto como parametro ele usa o arquivo json
     let livrosComDesconto = aplicarDesconto(livros)
-    //aqui a função de exibir... recebe como parametro a variavel livros com desconto, pois na variavel existe os preços atualizados com desconto para mostrar na tela, e dentro da função existe outras funçoes
+    //aqui a função de exibir... recebe como parametro a variavel livros com desconto,
+    // pois na variavel existe os preços atualizados com desconto para mostrar na tela, e dentro da função existe outras funçoes
     exibirOsLivrosNaTela(livrosComDesconto)
 }
 
