@@ -16,10 +16,9 @@ function exibirOsLivrosNaTela(listaDeLivros) {
 
     // aqui fazemos todo o preenchimento do html a partir do json e outras funcoes
     elementoParaInserirLivros.innerHTML +=
-      `<div class="livro">`
-
-        //aqui, feito o teste, preenche, depois preenche com o arquivo json guardado e convertido na variavel livro
-        `  <img class="${disponibilidade}" src="${livro.imagem}" alt="${livro.alt}">
+      //aqui, feito o teste, preenche, depois preenche com o arquivo json guardado e convertido na variavel livro  
+      `<div class="livro">
+      <img class="${disponibilidade}" src="${livro.imagem}" alt="${livro.alt}">
           "${livro.titulo}"
         </h2>
         <p class="livro__descricao">${livro.autor}</p>
